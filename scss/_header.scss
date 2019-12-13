@@ -1,0 +1,53 @@
+header {
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1rem 1rem 2rem;
+        color: $text-color;
+        position: relative;
+
+        .logo {
+            width: auto;
+            min-width: 40%;
+        }
+
+        .nav-bar {
+            width: 40%;
+        }
+
+        .nav-cta {
+            background: $primary-color;
+            color: $light-color;
+            border: 1px solid $primary-color;
+
+            .cart {
+                margin-right: 1rem;
+                position: relative;
+
+                &:after{
+                    content: '|';
+                    position: absolute;
+                    top: -2px;
+                    left: 32px;
+                }
+            }
+
+            &:hover {
+                background: $light-color;
+                color: $primary-color;
+                border: 1px solid $primary-color;
+            }
+        }
+
+        &:after {
+            content: "";
+            margin: auto;
+            position: absolute;
+            left: 16px;
+            bottom: 0px;
+            width: 97.7%;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}

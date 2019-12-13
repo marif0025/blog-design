@@ -1,0 +1,31 @@
+footer {
+    .footer-nav {
+        padding: 1rem 0;
+        border-bottom: 1px solid #C6c6c680;
+
+        .menu {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            width: 50%;
+
+            .menu-item {
+                padding:0.5rem 0;
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                    border-bottom: 2px solid $text-color;
+                }
+            }
+
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        padding: 2rem 0;
+    }
+}
