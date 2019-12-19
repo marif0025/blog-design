@@ -108,3 +108,39 @@
         }
     }
 }
+
+@include media-1024 {
+    .content {
+        padding: 2rem 0 3rem;
+        main {
+            article {
+                .meta-data {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
+
+@include media-728 {
+    .content {
+        flex-direction: column;
+
+        main {
+            width: 100%;
+        }
+    }
+}
+
+@include media-480 {
+    .content {
+       main {
+           article .main-cta {
+               display: block;
+               width: 100%;
+               margin-top: 2rem;
+           }
+        }
+    }
+}

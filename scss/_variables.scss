@@ -4,3 +4,27 @@ $border-color: #C6c6c680;
 $light-color: #f4f4f4;
 
 $logo-font: 'Righteous', cursive;
+
+@mixin media-1024 {
+    @media only screen and (max-width: 1024px ) {
+        @content;
+      } 
+}
+
+@mixin media-996 {
+    @media only screen and (max-width: 996px ) {
+        @content;
+      } 
+}
+
+@mixin media-728 {
+    @media only screen and (max-width: 728px ) {
+        @content;
+      } 
+}
+
+@mixin media-480 {
+    @media only screen and (max-width: 501px ) {
+        @content;
+      } 
+}

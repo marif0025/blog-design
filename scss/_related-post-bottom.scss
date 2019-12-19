@@ -49,3 +49,37 @@
         }
     }
 }
+@include media-996 {
+    .related-posts-bottom {
+        padding: 4rem 0;
+        .related-post-bottom {
+            .rpb-text {
+                 padding: 1rem;
+                .rpb-details {
+                    flex-direction: column;
+                    margin-top: 2rem;
+                    .category {
+                        margin-bottom: 1rem;
+                    }
+                    a {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-728 {
+    .related-posts-bottom {
+        padding: 3rem 2rem;
+        flex-direction: column;
+    
+        .related-post-bottom {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+}

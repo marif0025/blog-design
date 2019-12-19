@@ -82,3 +82,45 @@ aside {
         }
     }
 }
+
+@include media-996 {
+    aside {
+    
+        .news-letter {
+            margin: 2rem 0;
+        }
+    
+        .related{
+            .related-item {
+                display: flex;
+                margin: 1.5rem 0;
+            }
+        }
+    }
+}
+
+@include media-728 {
+    aside {
+        width: 100%;
+    
+        .aside-cta {
+            display: none;
+            }
+    
+        .news-letter {
+            margin: 3rem auto 0;
+            width: 80%;
+            text-align: center;
+        }
+    
+        .related{
+            display: none;
+        }
+    }
+}
+
+@include media-480 {
+    aside .news-letter {
+        width: 100%;
+    }
+}

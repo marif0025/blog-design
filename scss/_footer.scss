@@ -29,3 +29,9 @@ footer {
         padding: 2rem 0;
     }
 }
+
+@include media-728 {
+    footer .footer-nav .menu {
+        width: 100%;
+    }
+}
