@@ -19,7 +19,6 @@
             width: 50%;
             padding: 1rem 2rem;
             position: relative;
-
             display: flex;
             flex-direction: column;
             justify-content: end;
@@ -78,6 +77,74 @@
                         :hover {
                             border-bottom: 1px solid $text-color;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-1080 {
+    .blog-content{
+        .blog-post {
+            flex-direction: column;
+
+            .bp-feature-img {
+                width: 100%;
+            }
+
+            .bp-description {
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@include media-728 {
+    .blog-content{
+        .blog-post {
+            .bp-description {
+                width: 100%;
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+@include media-580 {
+    .blog-content{
+        .blog-post {
+            margin-top: 3rem;
+            padding-bottom: 3rem;
+            .bp-description {
+                width: 100%;
+
+                .title{
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
+
+@include media-480 {
+    .blog-content{
+        .blog-post {
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+            .bp-description {
+                .blog-meta-data {
+                    flex-direction: column;
+
+                    .meta-links {
+                        margin-bottom: 1rem;
+                    }
+
+                    a.read-more{
+                        display: block;
+                        width: 100%;
                     }
                 }
             }

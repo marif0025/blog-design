@@ -259,6 +259,15 @@ header .header-content:after {
   color: white;
 }
 
+@media only screen and (max-width: 580px) {
+  .blog-container .blog-logo {
+    margin: 1rem 0 1rem;
+  }
+  .blog-container .blog-nav-bar .blog-menu {
+    width: 100%;
+  }
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,7 +419,7 @@ header .header-content:after {
   }
 }
 
-@media only screen and (max-width: 501px) {
+@media only screen and (max-width: 480px) {
   .content main article .main-cta {
     display: block;
     width: 100%;
@@ -530,6 +539,68 @@ header .header-content:after {
 
 .blog-content .blog-post .bp-description .blog-meta-data .meta-links li :hover {
   border-bottom: 1px solid #333333;
+}
+
+@media only screen and (max-width: 1080px) {
+  .blog-content .blog-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-content .blog-post .bp-feature-img {
+    width: 100%;
+  }
+  .blog-content .blog-post .bp-description {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .blog-content .blog-post .bp-description {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .blog-content .blog-post {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .blog-content .blog-post .bp-description {
+    width: 100%;
+  }
+  .blog-content .blog-post .bp-description .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .blog-content .blog-post {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .blog-content .blog-post .bp-description .blog-meta-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-content .blog-post .bp-description .blog-meta-data .meta-links {
+    margin-bottom: 1rem;
+  }
+  .blog-content .blog-post .bp-description .blog-meta-data a.read-more {
+    display: block;
+    width: 100%;
+  }
 }
 
 .related-posts-bottom {
@@ -753,7 +824,7 @@ aside .related .related-item .img-rp {
   }
 }
 
-@media only screen and (max-width: 501px) {
+@media only screen and (max-width: 480px) {
   aside .news-letter {
     width: 100%;
   }

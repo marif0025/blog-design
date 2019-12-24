@@ -5,6 +5,12 @@ $light-color: #f4f4f4;
 
 $logo-font: 'Righteous', cursive;
 
+@mixin media-1080 {
+    @media only screen and (max-width: 1080px ) {
+        @content;
+      } 
+}
+
 @mixin media-1024 {
     @media only screen and (max-width: 1024px ) {
         @content;
@@ -23,8 +29,14 @@ $logo-font: 'Righteous', cursive;
       } 
 }
 
+@mixin media-580 {
+    @media only screen and (max-width: 580px ) {
+        @content;
+      } 
+}
+
 @mixin media-480 {
-    @media only screen and (max-width: 501px ) {
+    @media only screen and (max-width: 480px ) {
         @content;
       } 
 }
