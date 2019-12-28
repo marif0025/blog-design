@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 6rem 0;
-    border-bottom: 1px solid $border-color;
+    // border-bottom: 1px solid $border-color;
 
     .related-post-bottom {
         width: 31%;
@@ -80,6 +80,15 @@
         .related-post-bottom {
             width: 100%;
             margin-bottom: 2rem;
+        }
+    }
+}
+
+@include media-480 {
+    .related-posts-bottom {
+        padding: 3rem 0rem;
+        .related-post-bottom .rpb-text .rpb-details .category:hover {
+            border-bottom: 1px solid transparent;
         }
     }
 }

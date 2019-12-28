@@ -10,6 +10,9 @@
         padding-bottom: 6rem;
         border-bottom: 1px solid $border-color;
 
+        &:last-child {
+            border: none;
+        }
         .bp-feature-img {
             width: 50%;
             overflow: hidden;
@@ -104,6 +107,7 @@
 @include media-728 {
     .blog-content{
         .blog-post {
+            margin-top: 0;
             .bp-description {
                 width: 100%;
                 padding: 1rem 0;
@@ -114,11 +118,13 @@
 
 @include media-580 {
     .blog-content{
+        padding: 0;
         .blog-post {
             margin-top: 3rem;
             padding-bottom: 3rem;
             .bp-description {
                 width: 100%;
+                padding: 1rem;
 
                 .title{
                     flex-direction: column;

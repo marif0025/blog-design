@@ -106,7 +106,7 @@ h2 {
 .rate {
   float: left;
   height: 46px;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .rate:not(:checked) > input {
@@ -143,6 +143,10 @@ h2 {
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
+}
+
+header {
+  border-bottom: 1px solid #C6c6c680;
 }
 
 header .header-content {
@@ -193,17 +197,10 @@ header .header-content .nav-cta:hover {
   border: 1px solid #E95353;
 }
 
-header .header-content:after {
-  content: "";
-  margin: auto;
-  position: absolute;
-  left: 16px;
-  bottom: 0px;
-  width: 97.7%;
-  border-bottom: 1px solid #C6c6c680;
-}
-
 @media only screen and (max-width: 728px) {
+  header {
+    border: none;
+  }
   header .header-content {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -212,6 +209,7 @@ header .header-content:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 1rem 0 2rem;
   }
   header .header-content .nav-bar {
     width: 100%;
@@ -225,6 +223,12 @@ header .header-content:after {
 @media only screen and (max-width: 1024px) {
   header .header-content .logo {
     min-width: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .header-content {
+    padding: 1rem 0;
   }
 }
 
@@ -304,6 +308,7 @@ header .header-content:after {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2rem;
+  color: #333333cc;
 }
 
 .content main article .meta-data .meta-links {
@@ -332,6 +337,7 @@ header .header-content:after {
 .content main article .meta-data .meta-links a {
   font-weight: 400;
   border-bottom: 1px solid transparent;
+  color: #333333cc;
 }
 
 .content main article .meta-data .meta-links a:hover {
@@ -416,10 +422,14 @@ header .header-content:after {
   }
   .content main {
     width: 100%;
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  .content main article .meta-data {
+    font-size: .8rem;
+  }
   .content main article .main-cta {
     display: block;
     width: 100%;
@@ -441,6 +451,10 @@ header .header-content:after {
   margin-top: 6rem;
   padding-bottom: 6rem;
   border-bottom: 1px solid #C6c6c680;
+}
+
+.blog-content .blog-post:last-child {
+  border: none;
 }
 
 .blog-content .blog-post .bp-feature-img {
@@ -558,6 +572,9 @@ header .header-content:after {
 }
 
 @media only screen and (max-width: 728px) {
+  .blog-content .blog-post {
+    margin-top: 0;
+  }
   .blog-content .blog-post .bp-description {
     width: 100%;
     padding: 1rem 0;
@@ -565,12 +582,16 @@ header .header-content:after {
 }
 
 @media only screen and (max-width: 580px) {
+  .blog-content {
+    padding: 0;
+  }
   .blog-content .blog-post {
     margin-top: 3rem;
     padding-bottom: 3rem;
   }
   .blog-content .blog-post .bp-description {
     width: 100%;
+    padding: 1rem;
   }
   .blog-content .blog-post .bp-description .title {
     -webkit-box-orient: vertical;
@@ -611,7 +632,6 @@ header .header-content:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 6rem 0;
-  border-bottom: 1px solid #C6c6c680;
 }
 
 .related-posts-bottom .related-post-bottom {
@@ -700,6 +720,15 @@ header .header-content:after {
   .related-posts-bottom .related-post-bottom {
     width: 100%;
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .related-posts-bottom {
+    padding: 3rem 0rem;
+  }
+  .related-posts-bottom .related-post-bottom .rpb-text .rpb-details .category:hover {
+    border-bottom: 1px solid transparent;
   }
 }
 
@@ -810,6 +839,7 @@ aside .related .related-item .img-rp {
 @media only screen and (max-width: 728px) {
   aside {
     width: 100%;
+    padding: 0;
   }
   aside .aside-cta {
     display: none;
@@ -832,6 +862,7 @@ aside .related .related-item .img-rp {
 
 footer .footer-nav {
   padding: 1rem 0;
+  border-top: 1px solid #C6c6c680;
   border-bottom: 1px solid #C6c6c680;
 }
 

@@ -25,6 +25,7 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 2rem;
+                color: $meta-link-color;
                 
                 .meta-links {
                     display: flex;
@@ -49,6 +50,7 @@
                     a {
                         font-weight: 400;
                         border-bottom: 1px solid transparent;
+                        color: $meta-link-color;
 
                         &:hover {
                             border-bottom: 1px solid $text-color;
@@ -129,6 +131,7 @@
 
         main {
             width: 100%;
+            padding: 0;
         }
     }
 }
@@ -136,11 +139,16 @@
 @include media-480 {
     .content {
        main {
-           article .main-cta {
-               display: block;
-               width: 100%;
-               margin-top: 2rem;
-           }
+           article {
+                .meta-data {
+                    font-size: .8rem;
+                }
+                .main-cta {
+                    display: block;
+                    width: 100%;
+                    margin-top: 2rem;
+                }
+           } 
         }
     }
 }

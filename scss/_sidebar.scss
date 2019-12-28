@@ -102,6 +102,7 @@ aside {
 @include media-728 {
     aside {
         width: 100%;
+        padding: 0;
     
         .aside-cta {
             display: none;

@@ -1,4 +1,5 @@
 header {
+    border-bottom: 1px solid $border-color;
     .header-content {
         display: flex;
         justify-content: space-between;
@@ -40,23 +41,25 @@ header {
             }
         }
 
-        &:after {
-            content: "";
-            margin: auto;
-            position: absolute;
-            left: 16px;
-            bottom: 0px;
-            width: 97.7%;
-            border-bottom: 1px solid $border-color;
-        }
+        // &:after {
+        //     content: "";
+        //     margin: auto;
+        //     position: absolute;
+        //     left: 16px;
+        //     bottom: 0px;
+        //     width: 97.7%;
+        //     border-bottom: 1px solid $border-color;
+        // }
     }
 }
 
 @include media-728 {
     header {
+        border: none;
         .header-content {
             align-items: center;
             flex-direction: column;
+            padding: 1rem 0 2rem;
 
             .nav-bar {
                 width: 100%;
@@ -76,6 +79,14 @@ header {
             .logo {
                 min-width: auto;
             }
+        }
+    }
+}
+
+@include media-480 {
+    header {
+        .header-content {
+            padding: 1rem 0;
         }
     }
 }
