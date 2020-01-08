@@ -68,6 +68,10 @@ li {
   list-style: none;
 }
 
+.border-bottom {
+  border-bottom: 1px solid #C6c6c680;
+}
+
 .btn {
   border: 1px solid transparent;
   border-radius: 4px;
@@ -143,10 +147,6 @@ h2 {
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
-}
-
-header {
-  border-bottom: 1px solid #C6c6c680;
 }
 
 header .header-content {
