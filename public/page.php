@@ -83,7 +83,7 @@
                 </article>
             </main>
             <aside>
-                <a href="#" target="_blank" class="btn btn-primary">
+                <a href="#" target="_blank" class="btn btn-primary btn-buy">
                     <span class="btn-text">Buy Now</span>
                     <span class="price">49</span>
                 </a>
