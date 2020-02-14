@@ -1,42 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include('inc/header.inc.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-
-    <title>Landing Page</title>
-</head>
-
-<body>
-    <header>
-        <div class="blog-container">
-            <div class="blog-header">
-                <div class="logo blog-logo">
-                    Logo
-                </div>
-                <p class="tag-line">
-                    Tag line goes here
-                </p>
-                <nav class="nav-bar blog-nav-bar">
-                    <ul class="menu blog-menu">
-                        <li class="menu-item"><a href="./">Home</a></li>
-                        <li class="menu-item"><a href="./page.html">Landing</a></li>
-                        <li class="menu-item active"><a href="./blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
     <div class="blog-container">
         <section class="blog-content">
             <div class="blog-post">
                 <div class="bp-feature-img">
-                    <img src="./img/f-image.png" alt="Feature Image">
+                    <img src="assets/img/f-image.png" alt="Feature Image">
                 </div>
                 <div class="bp-description">
                     <div class="title">
@@ -65,14 +33,14 @@
                             <li class="publish-date"><a href="#">Nov/29/2019</a></li>
                         </div>
 
-                        <a href="#" class="btn read-more">Read More</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
 
                 </div>
             </div>
             <div class="blog-post">
                 <div class="bp-feature-img">
-                    <img src="./img/f-image.png" alt="Feature Image">
+                    <img src="assets/img/f-image.png" alt="Feature Image">
                 </div>
                 <div class="bp-description">
                     <div class="title">
@@ -101,14 +69,14 @@
                             <li class="publish-date"><a href="#">Nov/29/2019</a></li>
                         </div>
 
-                        <a href="#" class="btn read-more">Read More</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
 
                 </div>
             </div>
             <div class="blog-post">
                 <div class="bp-feature-img">
-                    <img src="./img/f-image.png" alt="Feature Image">
+                    <img src="assets/img/f-image.png" alt="Feature Image">
                 </div>
                 <div class="bp-description">
                     <div class="title">
@@ -137,25 +105,12 @@
                             <li class="publish-date"><a href="#">Nov/29/2019</a></li>
                         </div>
 
-                        <a href="#" class="btn read-more">Read More</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
 
                 </div>
             </div>
         </section>
     </div>
-    <footer>
-        <div class="footer-nav">
-            <ul class="menu">
-                <li class="menu-item"><a href="#">Home</a></li>
-                <li class="menu-item"><a href="#">Contact</a></li>
-                <li class="menu-item"><a href="#">Privacy Policey</a></li>
-            </ul>
-        </div>
-        <p>All Copy rights reserved 2019 | <a href="#">A Awsome website</a></p>
-    </footer>
 
-    <script src="https://kit.fontawesome.com/c1f1ca9e87.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <?php include('inc/footer.inc.php') ?>

@@ -1,41 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include('inc/header.inc.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-
-    <title>Landing Page</title>
-</head>
-
-<body>
-    <header class="border-bottom">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    Logo
-                </div>
-                <nav class="nav-bar">
-                    <ul class="menu">
-                        <li class="menu-item"><a href="./">Home</a></li>
-                        <li class="menu-item"><a href="./page.html">Landing</a></li>
-                        <li class="menu-item"><a href="./blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-                <a href="#" target="_blank" class="btn nav-cta"><i class="fas fa-cart-plus cart"></i> Add to Cart</a>
-            </div>
-        </div>
-    </header>
     <div class="container">
         <section class="content">
             <main>
                 <article>
                     <div class="f-image">
-                        <img src="./img/f-image.png" alt="Feature Image">
+                        <img src="assets/img/f-image.png" alt="Feature Image">
                     </div>
 
                     <h1 class="article-title">Lorem ipsum dolor sit amet.</h1>
@@ -113,37 +83,37 @@
                 </article>
             </main>
             <aside>
-                <a href="#" target="_blank" class="btn aside-cta">
+                <a href="#" target="_blank" class="btn btn-primary">
                     <span class="btn-text">Buy Now</span>
                     <span class="price">49</span>
                 </a>
                 <div class="news-letter">
                     <p class="news-letter-desc">Subscribe to our news letter!</p>
                     <input type="text" class="news-letter-input" placeholder="Enter your Email...">
-                    <a class="btn btn-nl">Subscribe</a>
+                    <a class="btn btn-primary">Subscribe</a>
                 </div>
                 <div class="related">
                     <h3>Related Products</h3>
                     <div class="related-item">
-                        <img src="./img/img-rp.png" alt="Rp" class="img-rp">
+                        <img src="assets/img/img-rp.png" alt="Rp" class="img-rp">
                         <p class="rp-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
                             eveniet.
                         </p>
                     </div>
                     <div class="related-item">
-                        <img src="./img/img-rp.png" alt="Rp" class="img-rp">
+                        <img src="assets/img/img-rp.png" alt="Rp" class="img-rp">
                         <p class="rp-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
                             eveniet.
                         </p>
                     </div>
                     <div class="related-item">
-                        <img src="./img/img-rp.png" alt="Rp" class="img-rp">
+                        <img src="assets/img/img-rp.png" alt="Rp" class="img-rp">
                         <p class="rp-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
                             eveniet.
                         </p>
                     </div>
                     <div class="related-item">
-                        <img src="./img/img-rp.png" alt="Rp" class="img-rp">
+                        <img src="assets/img/img-rp.png" alt="Rp" class="img-rp">
                         <p class="rp-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
                             eveniet.
                         </p>
@@ -153,55 +123,42 @@
         </section>
         <section class="related-posts-bottom">
             <div class="related-post-bottom">
-                <img src="./img/f-image.png" alt="sad" class="rpb-card">
+                <img src="assets/img/f-image.png" alt="sad" class="rpb-card">
                 <div class="rpb-text">
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti dolorem
                         vel
                         perferendis, obcaecati praesentium.</p>
                     <div class="rpb-details">
                         <a href="#" class="category">Personal Care</a>
-                        <a href="#" class="btn read-more">Read More</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="related-post-bottom">
-                <img src="./img/f-image.png" alt="sad" class="rpb-card">
+                <img src="assets/img/f-image.png" alt="sad" class="rpb-card">
                 <div class="rpb-text">
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti dolorem
                         vel
                         perferendis, obcaecati praesentium.</p>
                     <div class="rpb-details">
                         <a href="#" class="category">Personal Care</a>
-                        <a href="#" class="btn read-more">Read More</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="related-post-bottom">
-                <img src="./img/f-image.png" alt="sad" class="rpb-card">
+                <img src="assets/img/f-image.png" alt="sad" class="rpb-card">
                 <div class="rpb-text">
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti dolorem
                         vel
                         perferendis, obcaecati praesentium.</p>
                     <div class="rpb-details">
                         <a href="#" class="category">Personal Care</a>
-                        <a href="#" class="btn read-more">Read More</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <footer>
-        <div class="footer-nav">
-            <ul class="menu">
-                <li class="menu-item"><a href="#">Home</a></li>
-                <li class="menu-item"><a href="#">Contact</a></li>
-                <li class="menu-item"><a href="#">Privacy Policey</a></li>
-            </ul>
-        </div>
-        <p>All Copy rights reserved 2019 | <a href="#">A Awsome website</a></p>
-    </footer>
 
-    <script src="https://kit.fontawesome.com/c1f1ca9e87.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+<?php include('inc/footer.inc.php') ?>
